@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: uz.ecobin.ecobin.EcobinApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.52 s -- in uz.ecobin.ecobin.EcobinApplicationTests
