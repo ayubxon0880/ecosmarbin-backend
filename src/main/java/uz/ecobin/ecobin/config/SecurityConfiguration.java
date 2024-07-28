@@ -30,7 +30,7 @@ public class SecurityConfiguration {
         http.cors(cors -> {
             cors.configurationSource(request -> {
                 CorsConfiguration configuration = new CorsConfiguration();
-                configuration.setAllowedOrigins(List.of("https://ecosmartbin-frontend.vercel.app/"));
+                configuration.setAllowedOrigins(List.of("http://localhost:3000/"));
                 configuration.setAllowedOriginPatterns(List.of("*"));
                 configuration.setAllowedMethods(List.of("*"));
                 configuration.setAllowCredentials(true);
@@ -44,6 +44,8 @@ public class SecurityConfiguration {
                         .requestMatchers("/api/v1/auth/**","/swagger-ui/**","/v3/api-docs/**")
                         .permitAll()
                         .requestMatchers(HttpMethod.GET,"/api/v1/bin/**")
+                        .permitAll()
+                        .requestMatchers(HttpMethod.GET,"/api/v1/bin-history/**")
                         .permitAll()
                         .requestMatchers("/api/v1/team/**")
                         .permitAll()

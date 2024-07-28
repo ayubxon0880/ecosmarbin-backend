@@ -26,7 +26,7 @@ public class AuthenticationController {
     public ResponseEntity<ApiResponse> register(
             @Valid @RequestBody RegisterRequest registerRequest,
             HttpServletRequest request
-    ){
+    ) {
         return service.register(registerRequest,request);
     }
 

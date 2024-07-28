@@ -63,7 +63,6 @@ public class NewsMemberImpl implements NewsService {
         News news = newsMapper.toEntity(newsDto);
         news.setImages(images1);
         News save = newsRepository.save(news);
-        System.out.println(save);
         return ResponseEntity.ok(newsMapper.toViewDto(save));
     }
 

@@ -12,7 +12,7 @@ import uz.ecobin.ecobin.model.Bin;
 import uz.ecobin.ecobin.repository.BinRepository;
 import uz.ecobin.ecobin.service.BinService;
 
-import java.util.ArrayList;
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
