@@ -30,7 +30,7 @@ public class SecurityConfiguration {
         http.cors(cors -> {
             cors.configurationSource(request -> {
                 CorsConfiguration configuration = new CorsConfiguration();
-                configuration.setAllowedOrigins(List.of("https://naqdvision.uz/"));
+                configuration.setAllowedOrigins(List.of("https://ecosmartbin-frontend.vercel.app/"));
                 configuration.setAllowedOriginPatterns(List.of("*"));
                 configuration.setAllowedMethods(List.of("*"));
                 configuration.setAllowCredentials(true);
